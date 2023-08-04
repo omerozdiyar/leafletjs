@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 </head>
-<body>
+<body  style="background-color: rgba(170, 211, 223, 0.2);">
   <div id="app">
 
 
-	<div class="row" style="height: 100vh; background-color: rgba(170, 211, 223, 0.2);">
+	<div class="row" style="height: 100vh;">
 		<div class="col-5">
 			<div id="map" class="h-100 "></div> 
 		</div>
@@ -25,7 +25,7 @@
 		<div class="col-5">
 			<div id="pointList">
 				<div v-for="(point, index) in points" :key="index" class="m-2">
-				 Nokta {{ index + 1 }}: Lat: {{ point.lat }}, Lng: {{ point.lng }}
+				 Nokta {{ index + 1 }}: Lat: {{ point.lat }}, Lng: {{ point.lng }}, Time: {{ point.datetime }}
 				 <button @click="showPointOnMap(point)" type="button" class="btn btn-info  btn-sm">Konuma Git</button>
 				 <button @click="deletePoint(point.id)" type="button" class="btn btn-danger  btn-sm">Sil</button>
 				</div>

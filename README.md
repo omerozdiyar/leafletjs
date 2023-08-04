@@ -35,3 +35,7 @@ npm start
 4. Kaydedilen noktaları `.json` formatında indirmek için "İndir" butonuna basın.
 
 5. Uygulama her sayfa yenilendiğinde json dosyasını çeker ve içerisindeki verilerı sağ tarafa listeler. Ardından harita üzerindeki işaretlenmiş noktalara birer marker bırakır.
+
+## Postman Collection
+
+Bu projenin API'sini test etmek için Postman Collection oluşturdum. Aşağıdaki linki kullanarak Postman Collection'ı görüntüleyebilir ve indirebilirsiniz: [Postman Collection](https://www.postman.com/solar-rocket-890449/workspace/samm-leafletjs/collection/28693450-97264675-3a98-4492-a0a9-d16388c94433?action=share&creator=28693450)
